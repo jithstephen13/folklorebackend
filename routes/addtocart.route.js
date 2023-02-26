@@ -24,8 +24,9 @@ cartRouter.post("/addtocart", async (request, response) => {
     const payload = request.body;
 
     let exist=await CartModel.findById({_id:payload._id})
+    console.log(exist)
 
-    if(exist.length<1){
+    if(exist==null){
 
     try {
         const cartdata = new CartModel(payload);
@@ -36,7 +37,8 @@ cartRouter.post("/addtocart", async (request, response) => {
     }
 }
 else{
-    await CartModel.findByIIdAndUpdate({ _id: payload._id},{quantity:exist.quantity+payload.quantity});
+    await CartModel.findByIdAndUpdate({ _id: payload._id},{quantity:exist.quantity+payload.quantity});
+    response.send({ "Message": "Item Successfully Added Into The Cart!" })
 
 
 }
