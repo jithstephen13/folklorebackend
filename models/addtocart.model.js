@@ -3,10 +3,18 @@ const mongoose = require("mongoose");
 
 
 const addtocartSchema = mongoose.Schema({
-    item: { type: String, required: true },
-    price: { type: Number, required: true },
-    quantity: { type: Number, required: true },
-    userID: { type: String, required: false }
+    img1: { type: String, required: true },
+    img2: { type: String, required: true },
+    img3: { type: String, required: true },
+    img4: { type: String, required: true },
+    name: { type: String, required: true },
+    brand: { type: String, required: true } ,
+    lowprice: { type: Number, required: true },
+    highprice: { type: Number, required: true },
+    rating: { type: Number, required: true },
+    id: { type: Number, required: true },
+    quantity: { type: Number, required: true }
+    
 }, {
     versionKey: false
 });
