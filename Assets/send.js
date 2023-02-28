@@ -1,4 +1,4 @@
-
+//const dresses = require('./dresses.json');
 // const insertMovies = async () => {
 //     try {
 //         const docs = await DressModel.insertMany(dresses);

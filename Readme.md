@@ -62,7 +62,7 @@ filtering with pagination
 #### for verifying purpose you can check following url
 
 #### it is the demo link to check
-`https://pepperfry-website-api.onrender.com/sofas`
+`https://ruby-happy-puppy.cyclic.app/sofas`
 
 
 
