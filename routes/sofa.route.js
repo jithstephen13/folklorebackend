@@ -118,6 +118,19 @@ sofaRouter.delete("/delete/:id", async (request, response) => {
 });
 
 
+// const furnit = require('../Assets/furniture.json');
+// const insertfurnit = async () => {
+//     try {
+//         const docs = await SofaModel.insertMany(furnit);
+//         return Promise.resolve(docs);
+//     } catch (err) {
+//         return Promise.reject(err)
+//     }
+// };
+
+// insertfurnit()
+//     .then((docs) => console.log(docs))
+//     .catch((err) => console.log(err))
 
 
 module.exports = { sofaRouter };

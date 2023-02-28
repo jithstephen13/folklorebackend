@@ -75,7 +75,19 @@ dressRouter.get("/", async (request, response) => {
     }
 });
 
+// const dresses = require('../Assets/dresses.json');
+// const insertdresses = async () => {
+//     try {
+//         const docs = await DressModel.insertMany(dresses);
+//         return Promise.resolve(docs);
+//     } catch (err) {
+//         return Promise.reject(err)
+//     }
+// };
 
+// insertdresses()
+//     .then((docs) => console.log(docs))
+//     .catch((err) => console.log(err))
 
 
 module.exports = { dressRouter };
